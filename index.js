@@ -43,3 +43,19 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Fetch and display elements from the server
+    cookieCheck(); 
+
+});
+
+function cookieCheck()
+{
+    cookie_name = "expense_tracker_cookie_container"
+    if(document.cookie.split(';').some((item) => item.trim().startsWith(`${cookie_name}=`)))
+    {
+        console.log("true")
+        window.location.href = "https://expense-tracker-dash-board.netlify.app";
+    }
+}
