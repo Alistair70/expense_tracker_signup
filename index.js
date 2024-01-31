@@ -39,7 +39,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
                 document.getElementById("output").innerHTML = "Username Exists";
             else if(data.message === 'success')
                 //If account creation is successful, user is redirected to login page.
-                window.location.href = "https://expense-tracker-login.netlify.app";
+                window.location.href = "https://login.expense-tracker-demo.site/";
         });
     }
 });
@@ -56,6 +56,6 @@ function cookieCheck()
     if(document.cookie.split(';').some((item) => item.trim().startsWith(`${cookie_name}=`)))
     {
         console.log("true")
-        window.location.href = "https://expense-tracker-dash-board.netlify.app";
+        window.location.href = "https://dashboard.expense-tracker-demo.site";
     }
 }
