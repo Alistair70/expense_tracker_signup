@@ -25,7 +25,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     
     //If checks are cleared request is sent to add account to database
     else{
-        fetch('https://expense-tracker-aytr.onrender.com/signup_user', {
+        fetch('https://main-py-server.onrender.com/signup_user', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
